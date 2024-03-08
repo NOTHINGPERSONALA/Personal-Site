@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background-color:#000000;
+}
+
+.header {
+  position: fixed;
+  padding: 20px 10%;
+  width: 100%;
+  background: transparent;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+
+.logo {
+  font-size: 30px;
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  margin-left: -5%;
+  transition: .4s;
+}
+
+.logo1 {
+  font-size: 30px;
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  margin-left: -5%;
+  transition: .4s;
+}
+
+.logo1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background:#000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: .3s;
+
+}
+
+
+
+
+.logo::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background:#000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+
+}
+
+
+
+
+
+.logo span {
+  color: #892CDC;
+  font-weight: 650;
+  font-size: 32px;
+}
+.logo1 span {
+  color: #892CDC;
+  font-weight: 650;
+  font-size: 32px;
+}
+
+
+.logo:hover
+{
+  color: #892CDC;
+
+}
+
+.logo span:hover {
+  color: white;
+}
+
+.navbar a {
+  position: relative;
+text-decoration: none;
+font-size: 18px;
+color: whitesmoke;
+font-weight: 500;
+margin-left: 35px;
+padding-left: 2rem;
+transition: .4s;
+}
+
+.navbar1 a {
+  position: relative;
+text-decoration: none;
+font-size: 18px;
+color: whitesmoke;
+font-weight: 500;
+margin-left: 35px;
+padding-left: 2rem;
+transition: .4s;
+}
+
+.navbar1 a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.7s;
+  animation-duration: 1.0s;
+  z-index: 2;
+
+}
+
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.6s;
+  animation-duration: 2.1s;
+  z-index: 2;
+
+}
+
+.homee {
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.navbar a:hover,
+.navbar a.homee {
+  color: #892CDC;
+}
+
+.hero {
+  color: white;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  position: relative;
+  font-size: 54px;
+  font-weight: 550;
+  padding-bottom: 0px;
+  transition: 1s;
+} 
+
+.hero-content > h1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background:#000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.7s;
+  animation-duration: 1.7s;
+
+}
+
+
+.hero-content h3 {
+  position: relative;
+  padding-top: 2px;
+  font-weight: 400;
+  font-size: 23px;
+  color: #892CDC;
+}
+
+.hero-content > h3::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background:#000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.1s;
+  animation-duration: 1.9s;
+
+}
+
+
+
+.hero-content p {
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 20px 0px 40px;
+}
+
+
+
+.hero-content p span {
+  color: red;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+
+  transition: .5s;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+.btn a {
+  position: relative;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 650;
+  padding: 10px;
+  border: solid #892CDC;
+  border-width: 04px  ;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  color:#892CDC ;
+  transition: .8;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn a:hover {
+  color: #000000;
+}
+
+
+.btn a::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background:#892CDC ;
+  z-index: -1;
+  transition: .5s;
+
+}
+
+.btn a:hover::before {
+  width: 100%;
+ 
+}
+
+.social {
+  position: absolute;
+  bottom: 100px;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+.social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 02px solid #892CDC;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #892CDC;
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+  transition: .6s;
+
+}
+
+.social a:hover { 
+ color: white; 
+ } 
+
+
+ .spotify {
+  width: 70px;
+  font-size: 27px;
+  height: 70px;
+ }
+
+ .socialme {
+  position: absolute;
+  bottom: 150px;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+.socialme a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 02px solid #892CDC;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #892CDC;
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+  transition: .6s;
+
+}
+
+.socialme a:hover { 
+ color: white; 
+ } 
+
+.griddd {
+  display: flex;
+  width: 80vh;
+  padding: 10px;
+}
+
+.col-1{
+  width: 40vh;
+}
+
+.col-2 {
+  width: 40vh;
+}
+
+
+.connect {
+  
+  font-size: 36px;
+  display:block; 
+  height: 50vh;
+  width: 100vh;  
+}
+.connect h2 {
+  position: relative;
+}
+
+.connect h2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #000000 ;
+  animation: showRight 1s ease forwards;
+  animation-delay: .8s;
+  animation-duration: 2.6s;
+  z-index: 2;
+}
+
+.connect-box {
+  position: relative;
+  display: flex;
+  font-size: 22px;
+  font-style: normal;
+
+}
+
+
+
+
+
+
+.connect-left {
+ 
+  flex-basis: 40%;
+  
+  
+}
+
+.connect-mid {
+
+  justify-content: start;
+  align-items: start;
+  flex-basis: 20%;
+}
+
+.connect-right {
+  
+  flex-basis: 40%;
+}
+
+
+.prj h2{
+  font-size: 30px;
+
+}
+
+
+
+.prj {
+  padding-left: 5% ;
+}
+.connect span {
+  color: #892CDC;
+}
+
+
+
+
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .hero {
+
+  }
+  .logo 
+  {
+    font-size: 22px;
+    
+  }
+  .logo span {
+    font-size: 23px;
+  }
+
+  .navbar a {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left: 1px;
+  }
+
+  .homee {
+    font-size: 16px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content h3 {
+    font-size: 18px
+  }
+  .hero-content p {
+    letter-spacing: 1;
+    font-size: 14px;
+  }
+
+  .btn {
+    max-width: fit-content;
+    margin-bottom: 20px ;
+  }
+
+  .btn a {
+    font-size: 14px;
+  }
+  .social a {
+    height: 38px;
+    width: 38px;
+    margin: 12px;
+    padding: 7px;
+  }
+
+  .spotify {
+    height: 38px;
+    width: 38px;
+    margin: 12px;
+    padding: 7px;
+  }
+
+  .social a {
+    font-size: 18px;
+  }
+
+  .socialme a {
+    height: 38px;
+    width: 38px;
+    margin: 12px;
+    padding: 7px;
+  }
+
+  .connect {
+    font-size: 24px;
+  }
+  .connect span {
+    color: #892CDC;
+  }
+  .connect-box {
+    font-size: 14px;
+
+  }
+
+  .connect-mid {
+    flex-basis: 10%;
+  }
+
+  .connect-left {
+    flex-basis: 30%;
+  }
+
+}
+
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+  
+  
+}
